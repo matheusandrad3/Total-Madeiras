@@ -51,7 +51,7 @@
         cursor: pointer;
         text-decoration: none;
         font-size: 2rem;
-        margin-right: 300px;
+        margin-right: 300px
 
     }
     .navbar_menu{
@@ -383,20 +383,72 @@ font-size: 40px;
     
 }
 
+#card-2{
+    background: #ff512f;
+    background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #dd2476, #ff512f);
+}
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 1100px) {
     .main_container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
     }
+    .main_img-container{
+        display: flex;
+        justify-content: center;
 
+    }
     .main_img-card{
-        background-size:cover;
+      height: 425px;
+      width: 425px;  
     }
 
     .main_content{
-        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 4rem;
     }
+
+    .main_content h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main_content h2{
+        font-size: 3rem;
+    }
+    .main_content p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .main_img-card{
+        width: 350px;
+        height: 350px;
+    }
+
+    .main_content h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main_content h2{
+        font-size: 2rem;
+    }
+    .main_content p{
+        margin-top: 2rem;
+    }    
+
+    main_btn{
+        padding: 12px 36px;
+        margin:2.5rem 0;
+    }
+
 }
